@@ -1,0 +1,62 @@
+.chat {
+    display: flex;
+
+
+}
+
+.content {
+    width: 200px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+    line-height: 24px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 15px;
+    display: flex;
+    background-color: burlywood;
+    flex-direction: column;
+}
+
+.content::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    left: -7px;
+    width: 30px;
+    background-color: burlywood;
+    border-bottom-right-radius: 14px 1px;
+}
+
+.content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    left: -15px;
+    width: 15px;
+    background-color: white;
+    border-bottom-right-radius: 14px;
+}
+
+.image {
+    width: 40px;
+    height: 44px;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin: 5px;
+}
+
+.message {
+    align-self: flex-start;
+
+}
+
+.time {
+    opacity: 0.4;
+    align-self: flex-end;
+}
+
+
+
+
